@@ -13,8 +13,7 @@ public class Construction
         taxRate = taxes;
     }
     
-    // Computes and returns the cost
-    // of the lumber
+    // Computes and returns the cost of the lumber
     public double lumberCost(int numBoards)
     {
         return lumber * numBoards;   
@@ -26,11 +25,9 @@ public class Construction
         return windows * numWindows;   
     }
     
-    // Computes the grand total by adding
-    // the tax amount to the total
+    // Computes the grand total by adding the tax amount to the total
     public double grandTotal(double total)
     {
         return total * (1 + taxRate);
     }
-    
 }
